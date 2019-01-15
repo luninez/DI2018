@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/pantalla"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@android:color/background_dark"
-        android:ems="10"
-        android:inputType="number"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@android:color/background_light"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="13dp" />
+        android:textSize="36sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="8dp">
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/buttonBorrar"
@@ -39,9 +31,7 @@
             android:background="@color/colorPrimary"
             android:text="Delete"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="165dp" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/buttonC"
@@ -51,9 +41,7 @@
             android:background="@color/colorPrimary"
             android:text="C"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="104dp"
-            tools:layout_editor_absoluteY="165dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonDividir"
@@ -63,9 +51,7 @@
             android:background="@color/colorPrimary"
             android:text="/"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="192dp"
-            tools:layout_editor_absoluteY="165dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonMultiplicar"
@@ -75,9 +61,7 @@
             android:background="@color/colorPrimary"
             android:text="x"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="280dp"
-            tools:layout_editor_absoluteY="165dp" />
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -86,9 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="8dp">
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/button1"
@@ -96,11 +78,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:onClick="numPulsado"
             android:text="1"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="213dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button2"
@@ -108,11 +89,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:onClick="numPulsado"
             android:text="2"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="104dp"
-            tools:layout_editor_absoluteY="213dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button3"
@@ -120,11 +100,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:onClick="numPulsado"
             android:text="3"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="192dp"
-            tools:layout_editor_absoluteY="213dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonRestar"
@@ -134,9 +113,7 @@
             android:background="@color/colorPrimary"
             android:text="-"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="280dp"
-            tools:layout_editor_absoluteY="213dp" />
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -144,9 +121,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="8dp">
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/button4"
@@ -154,11 +129,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:onClick="numPulsado"
             android:text="4"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="261dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button5"
@@ -166,11 +140,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:onClick="numPulsado"
             android:text="5"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="104dp"
-            tools:layout_editor_absoluteY="261dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button6"
@@ -178,11 +151,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:onClick="numPulsado"
             android:text="6"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="192dp"
-            tools:layout_editor_absoluteY="261dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonSumar"
@@ -192,9 +164,7 @@
             android:background="@color/colorPrimary"
             android:text="+"
             android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="280dp"
-            tools:layout_editor_absoluteY="261dp" />
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -202,25 +172,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.8"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="8dp">
+        android:orientation="horizontal" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="8dp">
+            android:orientation="vertical" >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:layout_editor_absoluteX="8dp">
+                android:orientation="horizontal" >
 
                 <Button
                     android:id="@+id/button7"
@@ -228,11 +192,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
+                    android:onClick="numPulsado"
                     android:text="7"
                     android:textColor="@android:color/background_light"
-                    android:textSize="30sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="309dp" />
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/button8"
@@ -240,11 +203,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
+                    android:onClick="numPulsado"
                     android:text="8"
                     android:textColor="@android:color/background_light"
-                    android:textSize="30sp"
-                    tools:layout_editor_absoluteX="104dp"
-                    tools:layout_editor_absoluteY="309dp" />
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/button9"
@@ -252,11 +214,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
+                    android:onClick="numPulsado"
                     android:text="9"
                     android:textColor="@android:color/background_light"
-                    android:textSize="30sp"
-                    tools:layout_editor_absoluteX="192dp"
-                    tools:layout_editor_absoluteY="309dp" />
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
@@ -264,9 +225,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:layout_editor_absoluteX="8dp">
+                android:orientation="horizontal" >
 
                 <Button
                     android:id="@+id/button0"
@@ -274,11 +233,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
+                    android:onClick="numPulsado"
                     android:text="0"
                     android:textColor="@android:color/background_light"
-                    android:textSize="30sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="357dp" />
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/buttonPunto"
@@ -288,9 +246,7 @@
                     android:background="@color/colorPrimary"
                     android:text="."
                     android:textColor="@android:color/background_light"
-                    android:textSize="30sp"
-                    tools:layout_editor_absoluteX="192dp"
-                    tools:layout_editor_absoluteY="357dp" />
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
