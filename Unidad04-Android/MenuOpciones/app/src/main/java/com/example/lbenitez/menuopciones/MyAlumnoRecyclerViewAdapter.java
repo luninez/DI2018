@@ -68,12 +68,8 @@ public class MyAlumnoRecyclerViewAdapter extends RecyclerView.Adapter<MyAlumnoRe
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mImg = view.findViewById(R.id.img);
-            mNombre =  view.findViewById(R.id.name);
-            mApellidos = view.findViewById(R.id.apellidos);
-            mCurso =  view.findViewById(R.id.curso);
-            mEditar =  view.findViewById(R.id.edit);
-            mDelete = view.findViewById(R.id.delete);
+            ", fechaNac=" + fechaNac +
+
         }
 
         @Override

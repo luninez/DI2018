@@ -62,9 +62,9 @@ public class AlumnoFragment extends Fragment {
             }
 
         alumnos = new ArrayList<>();
-            alumnos.add(new Alumno(1, "https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg", "Lucia", "benitez", "2DAM"));
-            alumnos.add(new Alumno(2, "https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg", "Eva", "benitez", "2DAM"));
-            alumnos.add(new Alumno(3, "https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg", "Olga", "benitez", "2DAM"));
+            alumnos.add(new Alumno(1, "https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg", "Lucia", "Benitez Martinez", "2DAM"));
+            alumnos.add(new Alumno(2, "https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg", "Eva", "Benitez Martinez", "2DAM"));
+            alumnos.add(new Alumno(3, "https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg", "Olga", "Benitez Martinez", "2DAM"));
 
         adapter = new MyAlumnoRecyclerViewAdapter(ctx, R.layout.fragment_alumno, alumnos, mListener);
 
